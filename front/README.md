@@ -16,6 +16,15 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npx expo start
    ```
 
+## Troubleshooting
+
+If Expo fails with `Cannot find module '@react-native/debugger-frontend'`, do a clean install so the debugger package is restored:
+
+```bash
+rm -rf node_modules package-lock.json
+npm install
+```
+
 In the output, you'll find options to open the app in a
 
 - [development build](https://docs.expo.dev/develop/development-builds/introduction/)
